@@ -1,0 +1,63 @@
+@import './plugin';
+
+.form__container {
+  height: 100%;
+  width: 100%;
+  @include flex-c;
+  form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba($color: #fff, $alpha: 0.2);
+    border-radius: 10px;
+    padding: 60px 50px;
+    width: 350px;
+    h1{
+        font-size: 20px;
+        color: #cc003d;
+    }
+  }
+  input {
+    background: transparent;
+    padding: 12px;
+    border: 1px solid rgba($color: #fff, $alpha: 0.2);
+    border-radius: 4px;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    margin: 10px 0;
+    &:focus {
+      border: 1px solid #ffffff;
+      outline: none;
+    }
+  }
+  button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #fff;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      background: rgba(255, 255, 255, 0.7);
+      transform: scale(1.05);
+      color: #232129;
+    }
+  }
+  span {
+    position: absolute;
+    bottom: -30px;
+    color: white;
+    a {
+      color: #ff004c;
+      font-weight: 800;
+    }
+  }
+}
